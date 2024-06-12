@@ -208,8 +208,10 @@ footer{
 }
 
 footer p{
-    color: #d3ced6;
+    color: #ffffff;
     margin-top: 30px;
     font-family: 'Roboto mono', monospace;
+    font-size: larger;
+    font-weight: bold;
 
 }
