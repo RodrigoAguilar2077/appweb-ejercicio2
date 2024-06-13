@@ -5,9 +5,12 @@
     --color-primary:linear-gradient(45deg, #c768ec, #a327e6, #6220b4);
     --color-light: #053a6c;
     --color-black: #000000;
+    --color-gray: #acacac;
     --font-medium: 1.4rem;
     --font-large: 1.6rem;
     --color-2099:linear-gradient(45deg, #6220b4, #7654db, #0d0da4);
+    --color-2049:linear-gradient(45deg, #ab7ee2, #663596, #5d158d);
+
 }
 
 body{
@@ -380,3 +383,12 @@ footer p{
     width: 30%;
     border-radius: 5px;
 }*/
+
+form{
+    padding: 10px;
+    font-family: 'Roboto mono', monospace;
+    background-color: var(--color-gray);
+}
+label {
+    font-weight: bold;
+}
