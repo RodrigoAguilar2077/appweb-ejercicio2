@@ -32,13 +32,31 @@
     <main>
         <h2>Formulario de contacto</h2>
         <hr>
-        <form action="" method="post">
+        <form action="" method="" autocomplete="on">
             <label for="nombre">Escribe tu nombre: </label>
-            <input type="text" id="nombre" name="nombre">
+            <input type="text" id="nombre" name="nombre" autocomplete="name" required>
             <br><br>
             <label for="mail">Escribe tu correo: </label>
-            <input type="mail" id="mail" name="mail">
+            <input type="mail" id="mail" name="mail" required>
             <br><br>
+            <!-- Creacion de una lista desplegable-->
+                <label for="intereses">¿Que te interesa del Blog?</label>
+            <select name="intereses" id="intereses">
+                <option value="historia">Hisotoria de Cyberpunk</option>
+                <option value="noticias">Noticias de Night City</option>
+                <option value="gadgets">Reseñas de los mejores titulos Cyberpunk</option>
+            </select>
+            <br><br>
+            <!-- Otra forma de crear una lista -->
+                <label for="gadgets">Selecciona el personaje que mas te gusta</label>
+                    <input list="gadgets">
+                    <datalist id="gadgets">
+                        <option value="Cyberpunk Edgeruuners">David Martinez</option>
+                        <option value="Cyberpunk 2077">V</option>
+                        <option value="Cyberpunk 2077">Jackie Wells</option>
+                        <option value="Cyberpunk 2077">Morgan Blackhand</option>
+                    </datalist>
+                    <br><br>
             <label for="mensaje">Escribe un mensaje c: </label>
             <textarea name="mensaje" id="mensaje"></textarea>
             <br><br>
